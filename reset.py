@@ -1,6 +1,7 @@
 # 舵机复位模块
 from pyb import Servo,LED                                # 从pyb模块引入Servo类
 from shuju import biao_zhi_wei
+import pyb
 
 led1=LED(1)
 led2=LED(2)
@@ -17,7 +18,7 @@ def jiaozhun():
     # 矫准函数
     while(True):
         led1.on()
-        led2,off()
+        led2.off()
         b=biao_zhi_wei()
         if b==[65,66,0,0,0,0,0,0,1]:
             angle0.append(s1.angle())

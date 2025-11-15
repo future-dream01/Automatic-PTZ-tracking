@@ -2,7 +2,7 @@ import sensor, image, time, math,time,lcd ,pyb       # 导入函数所依赖的�
 from pid import Pid                                  # 从pid模块导入Pid类
 from pyb import Servo,UART                           # 从pyb模块引入Servo类
 from shuju import biao_zhi_wei                       # 从shuju模块导入biao_zhi_wei函数
-from gongneng import xun_heikuang                    # 从gongneng模块导入xun_heikuang函数
+from gongneng import xun_heikuang,sao_bianxian                    # 从gongneng模块导入xun_heikuang函数
 from reset import hui_zhongdian,jiaozhun             # 从reset模块导入hui_zhongdian函数,jiaozhun函数
 
 angle=[]
